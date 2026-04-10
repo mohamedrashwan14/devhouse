@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Navbar } from '@/components/navbar'
-import { ArrowRight, Calendar, MessageCircle, Search, ClipboardList, Paintbrush, Rocket, HeartHandshake } from 'lucide-react'
+import { ArrowRight, MessageCircle, Search, ClipboardList, Paintbrush, Rocket, HeartHandshake } from 'lucide-react'
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -133,14 +133,14 @@ export default function HomePage() {
                 step: '1',
                 icon: ClipboardList,
                 title: 'Free Audit',
-                description: 'We review your current online presence and tell you exactly what\'s costing you patients.',
+                description: "We review your current online presence and tell you exactly what\u2019s costing you patients.",
                 delay: 0,
               },
               {
                 step: '2',
                 icon: Paintbrush,
                 title: 'Design',
-                description: 'We design your new site around your clinic\'s brand and your patients\' needs.',
+                description: "We design your new site around your clinic\u2019s brand and your patients\u2019 needs.",
                 delay: 0.1,
               },
               {
@@ -188,7 +188,7 @@ export default function HomePage() {
             {...fadeUp(0.15)}
             className="text-lg text-gray-300 mb-10"
           >
-            Book a free 15-minute call. We'll audit your current site live and show you exactly what to fix — whether you hire us or not.
+            Book a free 15-minute call. We&apos;ll audit your current site live and show you exactly what to fix — whether you hire us or not.
           </motion.p>
           <motion.div {...fadeUp(0.3)}>
             <Link
