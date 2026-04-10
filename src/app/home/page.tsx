@@ -39,7 +39,7 @@ export default function HomePage() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
-              href="/contact"
+              href="/free-audit"
               className="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold rounded-md text-white bg-[#17b6a7] hover:bg-[#14a090] transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#17b6a7]/30"
             >
               Get a Free Website Audit
@@ -192,7 +192,7 @@ export default function HomePage() {
           </motion.p>
           <motion.div {...fadeUp(0.3)}>
             <Link
-              href="/contact"
+              href="/free-audit"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md text-white bg-[#17b6a7] hover:bg-[#14a090] transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#17b6a7]/30"
             >
               Book My Free Audit
