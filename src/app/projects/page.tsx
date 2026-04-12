@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import StarField from '@/components/star-field'
 import { Navbar } from '@/components/navbar'
-import { ExternalLink, Rocket, ShoppingBag, Home } from 'lucide-react'
+import { ExternalLink, Rocket, Home } from 'lucide-react'
 
 export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false)
