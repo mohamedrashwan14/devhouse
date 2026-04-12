@@ -48,14 +48,14 @@ export default function Projects() {
     //   icon: <Home className="w-6 h-6" />,
     //   color: "from-amber-500/20 to-amber-600/20"
     // },
-    {
-      title: "IbnSina Supermarket",
-      description: "A modern veterinary clinic website providing comprehensive pet healthcare services. Features appointment booking, medical records, and preventive care information.",
-      image: "/static/Images/IbnSinaMarket.png",
-      liveUrl: "https://www.ibnsina-market.com/",
-      icon: <ShoppingBag className="w-6 h-6" />,
-      color: "from-blue-500/20 to-blue-600/20"
-    },
+    // {
+    //   title: "IbnSina Supermarket",
+    //   description: "A modern veterinary clinic website providing comprehensive pet healthcare services. Features appointment booking, medical records, and preventive care information.",
+    //   image: "/static/Images/IbnSinaMarket.png",
+    //   liveUrl: "https://www.ibnsina-market.com/",
+    //   icon: <ShoppingBag className="w-6 h-6" />,
+    //   color: "from-blue-500/20 to-blue-600/20"
+    // },
   ]
 
   return (
