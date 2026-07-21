@@ -24,3 +24,126 @@
  GET /favicon.ico 200 in 302ms
  GET /home 200 in 339ms
  GET /favicon.ico?favicon.f1e5ded1.ico 200 in 321ms
+ GET /home 200 in 149ms
+ GET /home 200 in 98ms
+ GET /home 200 in 87ms
+ GET /favicon.ico 200 in 312ms
+ ✓ Compiled in 717ms
+ ✓ Compiled in 180ms
+ ✓ Compiled /home in 124ms
+ GET /favicon.ico 200 in 387ms
+ GET /home 200 in 465ms
+ GET /home 200 in 414ms
+ GET /favicon.ico 200 in 291ms
+ ✓ Compiled in 68ms
+ ✓ Compiled /home in 74ms
+ GET /home 200 in 201ms
+ GET /favicon.ico 200 in 284ms
+ GET /home 200 in 95ms
+ ✓ Compiled in 79ms
+ GET /favicon.ico 200 in 281ms
+ GET /home 200 in 139ms
+ GET /home 200 in 99ms
+ GET /favicon.ico 200 in 299ms
+ GET /home 200 in 150ms
+ GET /home 200 in 93ms
+ GET /favicon.ico 200 in 308ms
+ ✓ Compiled /home in 27ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1016ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.zsedfgyc5u'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.zsedfgyc5u'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.760zppyvzos'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.760zppyvzos'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.n1jtaap2gis'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.n1jtaap2gis'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.lfw726cyu6g'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.lfw726cyu6g'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.ls8xre90i7'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.ls8xre90i7'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.m5a9yoxefv'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.m5a9yoxefv'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.qwn31h0c6ca'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.qwn31h0c6ca'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\home\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\home\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.y7s5qz0v20h'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.y7s5qz0v20h'
+}
+[Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\static\development\_buildManifest.js.tmp.mfw2s0s34jq'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\static\\development\\_buildManifest.js.tmp.mfw2s0s34jq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'D:\Devhouse\devhouse\.next\server\app\favicon.ico\[__metadata_id__]\route\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\Devhouse\\devhouse\\.next\\server\\app\\favicon.ico\\[__metadata_id__]\\route\\app-paths-manifest.json'
+}
