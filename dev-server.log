@@ -22,3 +22,5 @@
  ✓ Compiled /free-audit in 341ms
  GET /free-audit 200 in 499ms
  GET /favicon.ico 200 in 302ms
+ GET /home 200 in 339ms
+ GET /favicon.ico?favicon.f1e5ded1.ico 200 in 321ms
