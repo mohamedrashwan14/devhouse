@@ -6,7 +6,8 @@
       "Bash(npm install:*)",
       "Bash(cp /tmp/45ccce0d-59f7-44dc-a94d-eb5cfc31cdf8.tmp.jpg \"D:/Devhouse/devhouse/public/static/Images/happydent.jpg\" && echo \"Copied successfully\" && ls -lh \"D:/Devhouse/devhouse/public/static/Images/happydent.jpg\")",
       "Bash(xargs ls -lt)",
-      "Bash(cd D:/Devhouse/devhouse/public/static/Images && rm -f happydent.jpg check_*.jpg check_*.jpg.jpg && ls)"
+      "Bash(cd D:/Devhouse/devhouse/public/static/Images && rm -f happydent.jpg check_*.jpg check_*.jpg.jpg && ls)",
+      "Bash(npm run *)"
     ]
   }
 }

@@ -2,19 +2,11 @@ import { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['v0.blob.com', 'localhost', 'placehold.co', 'https://devhouse-ten.vercel.app/','www.devhouse.dev', 'devhouse.dev'],
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
-      },
+      // Screenshot fallback on /projects when a local image fails to load
+      { protocol: 'https', hostname: 's0.wp.com', pathname: '/mshots/**' },
     ],
   },
 }
 
 export default nextConfig
-

@@ -59,12 +59,11 @@ export default function Contact() {
     setValidationErrors({});
 
     try {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const { honeypot: _honeypot, ...payload } = formData;
+      // Honeypot is sent through so the server can reject bots that POST directly
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(formData),
       });
       const data = await response.json();
       if (data.success) {

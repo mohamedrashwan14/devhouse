@@ -5,18 +5,33 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   try {
-    await dbConnect();
     const body = await req.json();
-    console.log('Received contact form data:', body);
+
+    // Honeypot — bots fill this, humans never see it. Return a fake success so
+    // they get no signal that the submission was rejected.
+    if (body.honeypot) {
+      return NextResponse.json({ success: true }, { status: 201 });
+    }
 
     // Validate the input data
     if (!body.name || !body.email || !body.subject || !body.message) {
       return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 });
     }
 
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
+      return NextResponse.json({ success: false, error: 'Invalid email address' }, { status: 400 });
+    }
+
+    await dbConnect();
+
     // Save form data to MongoDB (including the phone number)
-    const contact = await Contact.create(body);
-    console.log('Created contact:', contact);
+    const contact = await Contact.create({
+      name: body.name,
+      email: body.email,
+      subject: body.subject,
+      message: body.message,
+      phone: body.phone,
+    });
 
     // Configure nodemailer for sending email
     const transporter = nodemailer.createTransport({
@@ -60,10 +75,13 @@ DevHouse
       `,
     };
 
-    // Send emails
-    await transporter.sendMail(mailOptionsToDevHouse);
-    await transporter.sendMail(mailOptionsToUser);
-    console.log('Emails sent successfully');
+    // Send emails — the submission is already saved, so a mail failure is non-fatal
+    try {
+      await transporter.sendMail(mailOptionsToDevHouse);
+      await transporter.sendMail(mailOptionsToUser);
+    } catch (mailError) {
+      console.error('Contact email error (submission already saved):', mailError);
+    }
 
     return NextResponse.json({ success: true, data: contact }, { status: 201 });
   } catch (error) {
