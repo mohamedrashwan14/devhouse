@@ -28,9 +28,9 @@ interface PricingCard {
 const plans: PricingCard[] = [
   {
     id: 'starter',
-    name: 'Starter Clinic',
+    name: 'Starter',
     price: '8,000 EGP',
-    tagline: 'For clinics that need a clean, professional online presence fast.',
+    tagline: 'For businesses that need a clean, professional online presence fast.',
     features: [
       'Up to 5 pages (Home, Services, About, Gallery, Contact)',
       'Mobile-first responsive design',
@@ -44,16 +44,16 @@ const plans: PricingCard[] = [
   },
   {
     id: 'growth',
-    name: 'Growth Clinic',
+    name: 'Growth',
     price: '15,000 EGP',
-    tagline: 'For clinics that want to actively grow their patient base online.',
+    tagline: 'For businesses that want to actively grow their customer base online.',
     popular: true,
     features: [
       'Everything in Starter, plus:',
       'Up to 8 pages',
       'Online appointment booking form',
       'Google Business Profile setup & optimization',
-      'Patient reviews section',
+      'Client reviews section',
       'Arabic + English bilingual content',
       '3 months free maintenance',
       'Delivered in 14 days',
@@ -62,13 +62,13 @@ const plans: PricingCard[] = [
   },
   {
     id: 'premium',
-    name: 'Premium Clinic',
+    name: 'Premium',
     price: '22,000 EGP',
-    tagline: 'For multi-doctor clinics and specialists who want a full digital presence.',
+    tagline: 'For established businesses and brands who want a full digital presence.',
     features: [
       'Everything in Growth, plus:',
       'Up to 12 pages',
-      'Multiple doctor profiles',
+      'Multiple team member profiles',
       'Blog/articles section',
       'WhatsApp chat widget with auto-greeting',
       'Custom domain + email setup',
@@ -229,10 +229,10 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto">
           <motion.h1 {...fadeUp(0)} className="text-4xl sm:text-5xl font-bold mb-5 leading-tight">
             Pricing Built for{' '}
-            <span className="text-[#17b6a7]">Egyptian Clinics</span>
+            <span className="text-[#17b6a7]">Egyptian Businesses</span>
           </motion.h1>
           <motion.p {...fadeUp(0.15)} className="text-lg text-gray-300 leading-relaxed">
-            Clear, fixed packages. No hidden fees. Choose what fits your clinic — we&apos;ll deliver it in days, not months.
+            Clear, fixed packages. No hidden fees. Choose what fits your business — we&apos;ll deliver it in days, not months.
           </motion.p>
         </div>
       </section>
@@ -314,7 +314,7 @@ export default function PricingPage() {
             Not sure which package is right for you?
           </motion.h2>
           <motion.p {...fadeUp(0.15)} className="text-lg text-gray-300 mb-10 leading-relaxed">
-            Book your free audit and we&apos;ll recommend the best fit for your clinic — no pressure, no sales pitch.
+            Book your free audit and we&apos;ll recommend the best fit for your business — no pressure, no sales pitch.
           </motion.p>
           <motion.div {...fadeUp(0.25)}>
             <Link

@@ -13,22 +13,12 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.6, delay },
 })
 
-const SPECIALTIES = [
-  'Dentist',
-  'Dermatologist',
-  'Pediatrician',
-  'Gynecologist',
-  'Physiotherapist',
-  'General Practitioner',
-  'Other',
-]
-
 export default function FreeAuditPage() {
   const router = useRouter()
   const [form, setForm] = useState({
     name: '',
-    clinicName: '',
-    specialty: '',
+    businessName: '',
+    businessType: '',
     websiteUrl: '',
     whatsapp: '',
     frustration: '',
@@ -81,10 +71,10 @@ export default function FreeAuditPage() {
         <motion.div {...fadeUp(0)} className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight">
             Free Website Audit for{' '}
-            <span className="text-[#17b6a7]">Your Clinic</span>
+            <span className="text-[#17b6a7]">Your Business</span>
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed">
-            We&apos;ll review your current website (or lack of one) and send you a personalized video showing exactly what&apos;s costing you patients — and how to fix it. 100% free, no sales pitch. You get the video within 48 hours.
+            We&apos;ll review your current website (or lack of one) and send you a personalized video showing exactly what&apos;s costing you customers — and how to fix it. 100% free, no sales pitch. You get the video within 48 hours.
           </p>
         </motion.div>
 
@@ -96,7 +86,7 @@ export default function FreeAuditPage() {
           {[
             '48-hour turnaround',
             'No cost, no commitment',
-            'Built specifically for Egyptian clinics',
+            'For any type of business in Egypt',
           ].map(item => (
             <div key={item} className="flex items-center gap-2.5 text-sm text-gray-200">
               <CheckCircle2 className="h-5 w-5 text-[#17b6a7] shrink-0" />
@@ -123,45 +113,42 @@ export default function FreeAuditPage() {
                 value={form.name}
                 onChange={handleChange}
                 className="w-full bg-gray-900/60 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#17b6a7] focus:ring-1 focus:ring-[#17b6a7] transition"
-                placeholder="Dr. Ahmed Hassan"
+                placeholder="Ahmed Hassan"
               />
             </div>
 
-            {/* Clinic name */}
+            {/* Business name */}
             <div>
-              <label htmlFor="clinicName" className="block text-sm font-medium text-gray-300 mb-1.5">
-                Clinic name <span className="text-[#17b6a7]">*</span>
+              <label htmlFor="businessName" className="block text-sm font-medium text-gray-300 mb-1.5">
+                Business name <span className="text-[#17b6a7]">*</span>
               </label>
               <input
-                id="clinicName"
-                name="clinicName"
+                id="businessName"
+                name="businessName"
                 type="text"
                 required
-                value={form.clinicName}
+                value={form.businessName}
                 onChange={handleChange}
                 className="w-full bg-gray-900/60 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#17b6a7] focus:ring-1 focus:ring-[#17b6a7] transition"
-                placeholder="Nile Dental Center"
+                placeholder="e.g., Nile Real Estate, Cairo Gym, Blue Door Restaurant"
               />
             </div>
 
-            {/* Specialty */}
+            {/* Business type */}
             <div>
-              <label htmlFor="specialty" className="block text-sm font-medium text-gray-300 mb-1.5">
-                Your specialty <span className="text-[#17b6a7]">*</span>
+              <label htmlFor="businessType" className="block text-sm font-medium text-gray-300 mb-1.5">
+                Type of business <span className="text-[#17b6a7]">*</span>
               </label>
-              <select
-                id="specialty"
-                name="specialty"
+              <input
+                id="businessType"
+                name="businessType"
+                type="text"
                 required
-                value={form.specialty}
+                value={form.businessType}
                 onChange={handleChange}
-                className="w-full bg-gray-900/60 border border-white/15 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#17b6a7] focus:ring-1 focus:ring-[#17b6a7] transition appearance-none"
-              >
-                <option value="" disabled className="text-gray-500">Select your specialty</option>
-                {SPECIALTIES.map(s => (
-                  <option key={s} value={s} className="bg-gray-900">{s}</option>
-                ))}
-              </select>
+                className="w-full bg-gray-900/60 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#17b6a7] focus:ring-1 focus:ring-[#17b6a7] transition"
+                placeholder="e.g., Restaurant, Clinic, Gym, Real Estate, Law Firm..."
+              />
             </div>
 
             {/* Website URL */}
@@ -211,7 +198,7 @@ export default function FreeAuditPage() {
                 value={form.frustration}
                 onChange={handleChange}
                 className="w-full bg-gray-900/60 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#17b6a7] focus:ring-1 focus:ring-[#17b6a7] transition resize-none"
-                placeholder="e.g., I have no website, my site is old, I don't get patients from Google..."
+                placeholder="e.g., I have no website, my site is old, I don't get customers from Google..."
               />
             </div>
 

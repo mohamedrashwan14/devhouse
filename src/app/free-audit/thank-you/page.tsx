@@ -36,7 +36,7 @@ export default function FreeAuditThankYouPage() {
           </motion.div>
 
           <motion.p {...fadeUp(0.15)} className="text-lg text-gray-300 mb-4 leading-relaxed">
-            We&apos;ll review your clinic&apos;s online presence and send you a personalized video on WhatsApp within 48 hours.
+            We&apos;ll review your business&apos;s online presence and send you a personalized video on WhatsApp within 48 hours.
           </motion.p>
 
           <motion.p {...fadeUp(0.25)} className="text-lg text-gray-300 mb-10 leading-relaxed">

@@ -25,14 +25,14 @@ export default function HomePage() {
             {...fadeUp(0)}
             className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
           >
-            Modern Websites for Clinics That{' '}
-            <span className="text-[#17b6a7]">Actually Bring in Patients</span>
+            Modern Websites That{' '}
+            <span className="text-[#17b6a7]">Actually Grow Your Business</span>
           </motion.h1>
           <motion.p
             {...fadeUp(0.15)}
             className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto"
           >
-            We build fast, professional websites for clinics and medical practices in Egypt — with online booking, WhatsApp integration, and Google-ready SEO. Delivered in 2 weeks.
+            We build fast, professional websites for businesses in Egypt — with online booking, WhatsApp integration, and Google-ready SEO. Delivered in 2 weeks.
           </motion.p>
           <motion.div
             {...fadeUp(0.3)}
@@ -62,14 +62,14 @@ export default function HomePage() {
             {...fadeUp(0)}
             className="text-3xl sm:text-4xl font-bold mb-6"
           >
-            Is your clinic losing patients to a{' '}
+            Is your business losing customers to a{' '}
             <span className="text-[#17b6a7]">bad website?</span>
           </motion.h2>
           <motion.p
             {...fadeUp(0.15)}
             className="text-lg text-gray-300 leading-relaxed"
           >
-            Most clinics in Egypt still rely on outdated websites, a Facebook page, or nothing at all. Meanwhile, patients are searching Google right now for a clinic like yours — and choosing the one that looks more professional online.
+            Most businesses in Egypt still rely on outdated websites, a Facebook page, or nothing at all. Meanwhile, customers are searching Google right now for a business like yours — and choosing the one that looks more professional online.
           </motion.p>
         </div>
       </section>
@@ -88,19 +88,19 @@ export default function HomePage() {
               {
                 icon: Paintbrush,
                 title: 'Designed to Convert',
-                description: 'A clean, modern site that turns visitors into booked appointments. Mobile-first, fast, and built around your patients.',
+                description: 'A clean, modern site that turns visitors into paying customers. Mobile-first, fast, and built around your business goals.',
                 delay: 0,
               },
               {
                 icon: MessageCircle,
                 title: 'Online Booking & WhatsApp',
-                description: 'Patients book directly from your site or message you on WhatsApp in one tap. No more missed calls.',
+                description: 'Customers reach you directly from your site or message you on WhatsApp in one tap. No more missed leads.',
                 delay: 0.1,
               },
               {
                 icon: Search,
                 title: 'Found on Google',
-                description: 'We optimize your site so you show up when patients in your area search for your specialty.',
+                description: 'We optimize your site so you show up when people in your area search for what you offer.',
                 delay: 0.2,
               },
             ].map(({ icon: Icon, title, description, delay }) => (
@@ -133,14 +133,14 @@ export default function HomePage() {
                 step: '1',
                 icon: ClipboardList,
                 title: 'Free Audit',
-                description: "We review your current online presence and tell you exactly what\u2019s costing you patients.",
+                description: "We review your current online presence and tell you exactly what\u2019s costing you customers.",
                 delay: 0,
               },
               {
                 step: '2',
                 icon: Paintbrush,
                 title: 'Design',
-                description: "We design your new site around your clinic\u2019s brand and your patients\u2019 needs.",
+                description: "We design your new site around your brand and your customers\u2019 needs.",
                 delay: 0.1,
               },
               {
@@ -182,7 +182,7 @@ export default function HomePage() {
             {...fadeUp(0)}
             className="text-3xl sm:text-4xl font-bold mb-5"
           >
-            Ready to stop losing patients to a bad website?
+            Ready to stop losing customers to a bad website?
           </motion.h2>
           <motion.p
             {...fadeUp(0.15)}

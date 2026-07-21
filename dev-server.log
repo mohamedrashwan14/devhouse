@@ -1,0 +1,24 @@
+
+> devhouse@0.1.0 dev
+> next dev --turbopack --port 3001
+
+   ▲ Next.js 15.5.15 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.11:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling /home ...
+ ✓ Compiled /home in 3.7s
+ GET /home 200 in 4113ms
+ ✓ Compiled /favicon.ico in 194ms
+ GET /favicon.ico?favicon.f1e5ded1.ico 200 in 511ms
+ GET /home 200 in 137ms
+ GET /favicon.ico 200 in 305ms
+ ✓ Compiled /pricing in 382ms
+ GET /pricing 200 in 521ms
+ GET /favicon.ico 200 in 300ms
+ ✓ Compiled /free-audit in 341ms
+ GET /free-audit 200 in 499ms
+ GET /favicon.ico 200 in 302ms
