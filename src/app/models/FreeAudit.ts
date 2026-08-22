@@ -1,5 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+export type FreeAuditStatus = 'pending' | 'done';
+
 export interface IFreeAudit extends Document {
   name: string;
   businessName: string;
@@ -7,6 +9,7 @@ export interface IFreeAudit extends Document {
   websiteUrl?: string;
   whatsapp: string;
   frustration: string;
+  status: FreeAuditStatus;
   createdAt: Date;
 }
 
@@ -17,6 +20,7 @@ const FreeAuditSchema: Schema = new Schema({
   websiteUrl: { type: String, maxlength: 200 },
   whatsapp: { type: String, required: true, maxlength: 20 },
   frustration: { type: String, required: true, maxlength: 2000 },
+  status: { type: String, enum: ['pending', 'done'], default: 'pending', index: true },
 }, { timestamps: true });
 
 export default mongoose.models.FreeAudit || mongoose.model<IFreeAudit>('FreeAudit', FreeAuditSchema);

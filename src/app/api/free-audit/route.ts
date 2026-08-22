@@ -11,16 +11,19 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 });
   }
 
-  // Save to DB first — if this fails, return 500. Lead is the priority.
+  // Capture the lead two ways. Either one succeeding is enough — the prospect
+  // should never see an error for a submission we actually received.
+  let savedToDb = false;
+  let emailSent = false;
+
   try {
     await dbConnect();
     await FreeAudit.create({ name, businessName, businessType, websiteUrl, whatsapp, frustration });
+    savedToDb = true;
   } catch (error) {
     console.error('Free audit DB error:', error);
-    return NextResponse.json({ success: false, error: 'Something went wrong' }, { status: 500 });
   }
 
-  // Email notification — failure here is non-fatal, lead is already saved
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
@@ -44,10 +47,18 @@ WhatsApp: ${whatsapp}
 
 Biggest frustration:
 ${frustration}
+${savedToDb ? '' : '\n⚠️ NOT saved to the database — this email is the only copy. Check the admin panel and MongoDB connection.'}
       `.trim(),
     });
+    emailSent = true;
   } catch (error) {
-    console.error('Free audit email error (lead already saved):', error);
+    console.error('Free audit email error:', error);
+  }
+
+  // Only a total failure is worth surfacing to the prospect
+  if (!savedToDb && !emailSent) {
+    console.error('Free audit LOST — both DB and email failed:', { businessName, whatsapp });
+    return NextResponse.json({ success: false, error: 'Something went wrong' }, { status: 500 });
   }
 
   return NextResponse.json({ success: true }, { status: 200 });

@@ -49,6 +49,28 @@ const projects: Project[] = [
     screenshotUrl: '/static/Images/blackDiamond.png',
     urlBarText: 'blackdiamondegy.com',
   },
+  {
+    name: 'Neuvesca',
+    tagline: 'Business & Financial Services',
+    industryTag: 'Finance & Consulting',
+    description:
+      'A clean, professional website for a financial and business consulting firm. Designed to build trust and credibility with corporate clients, featuring a modern layout, services overview, and clear calls to action.',
+    featurePills: ['Corporate Design', 'Services', 'Lead Generation'],
+    siteUrl: 'https://www.neuvesca.com/',
+    screenshotUrl: '/static/Images/neuvesca.jpg',
+    urlBarText: 'neuvesca.com',
+  },
+  {
+    name: 'Kayan Dental',
+    tagline: 'Dental Clinic — Arabic & English',
+    industryTag: 'Medical & Dental Industry',
+    description:
+      'A bilingual Arabic-first website for a modern dental clinic. Includes a full services section, doctor profiles, patient-friendly booking flow, and a design that communicates professionalism and trust to patients in Egypt.',
+    featurePills: ['Bilingual (AR/EN)', 'Clinic Services', 'Appointment Booking'],
+    siteUrl: 'https://www.kayan-dental.com/ar/',
+    screenshotUrl: '/static/Images/kayan-dental.jpg',
+    urlBarText: 'kayan-dental.com',
+  },
 ]
 
 function BrowserCard({ project, delay }: { project: Project; delay: number }) {
